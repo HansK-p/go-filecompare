@@ -34,5 +34,6 @@ func Differs(logger *log.Entry, config *Configuration, srcFile, dstFile fs.FileI
 			return false, "", fmt.Errorf("do not know how to compare file attribute: %s", attribute)
 		}
 	}
+	logger.Debugf("Files are sufficiently alikse")
 	return false, "", nil
 }
